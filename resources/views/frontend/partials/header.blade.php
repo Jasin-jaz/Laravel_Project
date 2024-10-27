@@ -27,7 +27,7 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
     <a href="{{url('/')}}" class="navbar-brand d-flex align-items-center">
-        <h1 class="m-0"><img class="img-fluid me-3" src="{{asset('backend/img/logo/'.$setting -> logo)}}" alt="">AirCon</h1>
+        <h1 class="m-0"><img class="img-fluid me-3" src="{{asset('backend/img/logo/'.$setting -> logo)}}" alt="">{{$setting -> site_name}}</h1>
     </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>

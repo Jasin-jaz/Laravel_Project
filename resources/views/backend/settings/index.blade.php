@@ -2,8 +2,10 @@
 @section('content')
 
     <div class="card">
+        <div class="card-header font-weight-bold">
+            <div class="text-dark">Setting</div>
+        </div>
         <div class="card-body text-center">
-        <h4 class="card-title">Setting</h4>       
         <form class="forms-sample" method="POST" action="{{ route('setting.update') }}" enctype="multipart/form-data">@csrf
             <div class="form-group row">
             <label for="name" class="col-sm-3 col-form-label text-dark">Site Name</label>

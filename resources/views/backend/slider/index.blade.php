@@ -6,7 +6,9 @@
             <div class="text-dark">Slider</div>
         </div>
         <div class="card-body text-center">    
-            <a href="{{route('slider.create')}}" class="btn btn-info">Add New</a>
+            <div class="mb-4">
+                <a href="{{route('slider.create')}}" class="btn btn-info">Add New</a>
+            </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -22,11 +24,11 @@
                     <tr>
                         <td>{{$key + 1}}</td>
                         <td><img src="{{asset('backend/img/slider/'.$row->image)}}"></td>
-                        <td>{{$row->heading_text}}</td>
-                        <td>{{$row->small_text}}<td>
+                        <td>{{$row->heading}}</td>
+                        <td>{{$row->small_text}}</td>
                         <td>
-                            <a href="" class="btn btn-info">Edit</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a href="{{route('slider.edit', $row -> id)}}" class="btn btn-info">Edit</a>
+                            <a href="{{route('slider.delete', $row -> id)}}" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                     @endforeach
