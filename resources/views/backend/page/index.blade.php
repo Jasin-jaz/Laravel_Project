@@ -3,20 +3,16 @@
 
     <div class="card" style="height: 100%">
         <div class="card-header font-weight-bold d-flex justify-content-between">
-            <div class="text-dark">Slider</div>
+            <div class="text-dark">Page</div>
             <a href="{{route('backend.index')}}" class="text-dark"><i class="mdi mdi-arrow-left-drop-circle-outline "></i>&nbsp;Home</a>
         </div>
         <div class="card-body text-center">    
-            <div class="mb-4">
-                <a href="{{route('slider.create')}}" class="btn btn-info">Add New</a>
-            </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Image</th>
-                        <th>Heading Text</th>
-                        <th>Small Text</th>
+                        <th>Title</th>
+                        <th>Description</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -24,12 +20,10 @@
                     @foreach ($allData as $key => $row)
                     <tr>
                         <td>{{$key + 1}}</td>
-                        <td><img src="{{asset('backend/img/slider/'.$row->image)}}"></td>
-                        <td>{{$row->heading}}</td>
-                        <td>{{$row->small_text}}</td>
+                        <td>{{$row->title}}</td>
+                        <td>{{$row->description}}</td>
                         <td>
-                            <a href="{{route('slider.edit', $row -> id)}}" class="btn btn-info">Edit</a>
-                            <a href="{{route('slider.delete', $row -> id)}}" class="btn btn-danger">Delete</a>
+                            <a href="{{route('page.edit', $row -> id)}}" class="btn btn-info">Edit</a>
                         </td>
                     </tr>
                     @endforeach

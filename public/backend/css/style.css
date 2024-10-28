@@ -14289,3 +14289,7 @@ dl {
     color: #b1b1b1; }
 
 /*# sourceMappingURL=style.css.map */
+    
+.placeholder::placeholder {
+  color: grey;
+}

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{asset('backend/images/favicon.png')}}" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.css" rel="stylesheet">
   </head>
   <body>
     
@@ -68,5 +69,11 @@
     <!-- Custom js for this page -->
     <script src="{{asset('backend/js/dashboard.js')}}"></script>
     <!-- End custom js for this page -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#summernote').summernote();
+      });
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\BackendController;
 use App\Http\Controllers\backend\SettingController;
 use App\Http\Controllers\backend\SliderController;
+use App\Http\Controllers\backend\PageController;
 
 use App\Http\Controllers\frontend\FrontendController;
 
@@ -36,6 +37,14 @@ Route::post('/slider/store', [SliderController::class, 'store']) -> name('slider
 Route::get('/slider/edit/{id}', [SliderController::class, 'edit']) -> name('slider.edit');
 Route::post('/slider/update/{id}', [SliderController::class, 'update']) -> name('slider.update');
 Route::get('/slider/delete/{id}', [SliderController::class, 'destroy']) -> name('slider.delete');
+
+
+/*===============================================
+                Page Route
+===============================================*/ 
+Route::get('/page/index', [PageController::class, 'page']) -> name('page.index');
+Route::get('/page/edit/{id}', [PageController::class, 'edit']) -> name('page.edit');
+
 
 
 

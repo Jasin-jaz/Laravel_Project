@@ -29,17 +29,17 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{route('slider.index')}}">
-                <span class="icon-bg"><i class="mdi mdi-animation menu-icon"></i></span>
+                <span class="icon-bg"><i class="mdi mdi-image-filter menu-icon"></i></span>
                 <span class="menu-title">Slider</span>
             </a>
         </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
-                <span class="menu-title">Forms</span>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('page.index')}}">
+                <span class="icon-bg"><i class="mdi mdi-animation menu-icon"></i></span>
+                <span class="menu-title">Pages</span>
             </a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="icon-bg"><i class="mdi mdi-chart-bar menu-icon"></i></span>
                 <span class="menu-title">Charts</span>
@@ -99,13 +99,6 @@
                 </a>
             </div>
         </li>
-        <!-- <li class="nav-item sidebar-user-actions">
-            <div class="sidebar-user-menu">
-                <a href="#" class="nav-link"><i class="mdi mdi-speedometer menu-icon"></i>
-                    <span class="menu-title">Take Tour</span>
-                </a>
-            </div>
-        </li> -->
         <li class="nav-item sidebar-user-actions">
             <div class="sidebar-user-menu">
                 <a href="#" class="nav-link"><i class="mdi mdi-logout menu-icon"></i>

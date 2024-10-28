@@ -2,8 +2,9 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header font-weight-bold">
+        <div class="card-header font-weight-bold d-flex justify-content-between">
             <div class="text-dark">Setting</div>
+            <a href="{{route('backend.index')}}" class="text-dark"><i class="mdi mdi-arrow-left-drop-circle-outline "></i>&nbsp;Home</a>
         </div>
         <div class="card-body text-center">
         <form class="forms-sample" method="POST" action="{{ route('setting.update') }}" enctype="multipart/form-data">@csrf
