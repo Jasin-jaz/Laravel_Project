@@ -14293,3 +14293,15 @@ dl {
 .placeholder::placeholder {
   color: grey;
 }
+
+.description-column {
+    max-width: 200px;
+    overflow-y: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.description-column img {
+    max-width: 20%;
+    height: auto;
+}

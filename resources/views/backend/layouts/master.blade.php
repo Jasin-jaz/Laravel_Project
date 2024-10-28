@@ -70,10 +70,25 @@
     <script src="{{asset('backend/js/dashboard.js')}}"></script>
     <!-- End custom js for this page -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.js"></script>
+
     <script>
+
+      // summernote
       $(document).ready(function() {
         $('#summernote').summernote();
       });
+
+      // success message timeout
+      document.addEventListener("DOMContentLoaded", function() {
+          const alert = document.getElementById("success-alert");
+          if (alert) {
+              setTimeout(() => {
+                  alert.style.display = "none";
+              }, 2000); // 2000 ms = 2 seconds
+          }
+      });
+
     </script>
+
   </body>
 </html>

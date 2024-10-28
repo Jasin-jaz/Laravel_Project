@@ -44,6 +44,8 @@ Route::get('/slider/delete/{id}', [SliderController::class, 'destroy']) -> name(
 ===============================================*/ 
 Route::get('/page/index', [PageController::class, 'page']) -> name('page.index');
 Route::get('/page/edit/{id}', [PageController::class, 'edit']) -> name('page.edit');
+Route::post('/page/update/{id}', [PageController::class, 'update']) -> name('page.update');
+
 
 
 
